@@ -1,11 +1,8 @@
 ﻿Feature: ApiAcceptenceTests
-	In order to test t
-	As a math idiot
-	I want to be told the sum of two numbers
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
-
+	In order to test JSONPlaceholder API resouces
+	As a software tester
+	I want to request Api resources and validate the responses
+	
 Scenario Outline: Get users by user Id
 	When I request Get an user resource by valid <UserId>
 	Then I receive valid HTTP Success response status code
