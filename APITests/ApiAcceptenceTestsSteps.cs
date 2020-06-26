@@ -22,69 +22,69 @@ namespace APITests
             _apiClientResource = apiClientResource;
         }
 
-        [When(@"I request Get an user resource by valid (.*)")]
-        public async Task WhenIRequestGetAnUserResourceByValidUserId(int userId)
+        [When(@"I request Get a user resource by valid (.*)")]
+        public async Task WhenIRequestGetAUserResourceByValidUserId(int userId)
         {
             _response = await _apiClientResource.GetUserResponseByUserIdAsync(userId);            
         }
 
 
-        [When(@"I request Get an user posts resource by valid (.*)")]
+        [When(@"I request Get a user posts resource by valid (.*)")]
         public async Task WhenIRequestGetAnUserPostsResourceByValid(int postId)
         {
             _response = await _apiClientResource.GetPostsResponseByPostIdAsync(postId);
         }
 
-        [When(@"I request Get an user post Comments resource by valid (.*)")]
+        [When(@"I request Get a user post Comments resource by valid (.*)")]
         public async Task WhenIRequestGetAnUserPostCommentsResourceByValid(int commentsId)
         {       
             _response = await _apiClientResource.GetCommentsResponseByCommentsIdAsync(commentsId);
         }
 
-        [When(@"I request Get an user todos resource by valid (.*)")]
+        [When(@"I request Get a user todos resource by valid (.*)")]
         public async Task WhenIRequestGetAnUserTodosResourceByValidTodosId(int todosId)
         {
             _response = await _apiClientResource.GetToDosResponseByTodoIdAsync(todosId);
         }
 
-        [When(@"I request Get an user album resource by valid (.*)")]
+        [When(@"I request Get a user album resource by valid (.*)")]
         public async Task WhenIRequestGetAnUserAlbumResourceByValidAlbumId(int albumId)
         {
             _response = await _apiClientResource.GetAlbumsResponseByAlbumIdAsync(albumId);
         }
 
-        [When(@"I request Get an user album photos resource by valid (.*)")]
+        [When(@"I request Get a user album photos resource by valid (.*)")]
         public async Task WhenIRequestGetAnUserAlbumPhotosResourceByValidPhotoId(int photoId)
         {
             _response = await _apiClientResource.GetPhotosResponseByPhotoIdAsync(photoId);
         }
 
-        [When(@"I request Get list of comments assosiated to a post by (.*)")]
-        public async Task WhenIRequestGetListOfCommentsAssosiatedToAPostByPostId(int postId)
+        [When(@"I request Get list of comments associated to a post by (.*)")]
+        public async Task WhenIRequestGetListOfCommentsAssociatedToAPostByPostId(int postId)
         {
             _response = await _apiClientResource.GetListOfPostCommentsResponseByPostIdAsync(postId);
         }
 
-        [When(@"I request Get list of photos assosiated to a album by (.*)")]
-        public async Task WhenIRequestGetListOfPhotosAssosiatedToAAlbumByPhotoId(int albumId)
+        [When(@"I request Get list of photos associated to a album by (.*)")]
+        public async Task WhenIRequestGetListOfPhotosAssociatedToAAlbumByPhotoId(int albumId)
         {
             _response = await _apiClientResource.GetListOfAlbumPhotosResponseByAlbumIdAsync(albumId);
         }
 
-        [When(@"I request Get list of albums assosiated to a user by (.*)")]
-        public async Task WhenIRequestGetListOfAlbumsAssosiatedToAUserByUserId(int userId)
+        [When(@"I request Get list of albums associated to a user by (.*)")]
+        public async Task WhenIRequestGetListOfAlbumsassociatedToAUserByUserId(int userId)
         {
             _response = await _apiClientResource.GetListOfUserAlbumsResponseByUserIdAsync(userId);
         }
 
-        [When(@"I request Get list of todos assosiated to a user by (.*)")]
-        public async Task WhenIRequestGetListOfTodosAssosiatedToAUserByUserId(int userId)
+        [When(@"I request Get list of todos associated to a user by (.*)")]
+        public async Task WhenIRequestGetListOfTodosAssociatedToAUserByUserId(int userId)
         {
             _response = await _apiClientResource.GetListOfUserTodosResponseByUserIdAsync(userId);
         }
 
-        [When(@"I request Get list of posts assosiated to a user by (.*)")]
-        public async Task WhenIRequestGetListOfPostsAssosiatedToAUserByUserId(int userId)
+        [When(@"I request Get list of posts associated to a user by (.*)")]
+        public async Task WhenIRequestGetListOfPostsAssociatedToAUserByUserId(int userId)
         {
             _response = await _apiClientResource.GetListOfUserPostsResponseByUserIdAsync(userId);
         }
